@@ -35,7 +35,7 @@ This quickstart guide is an extended version of the official tutorial available 
 If you're using Linux or MacOS, you can follow this quickstart using your terminal. However, for Windows OS users, please note that CMD will not work. Instead, you should use Windows PowerShell.
 
 ## Step 0: Install Docker
-Please follow the Docker installation instructions that are tailored to your particular operating system. You can access comprehensive step-by-step guide [here](https://docs.docker.com/engine/install/).
+Follow the Docker installation instructions that are tailored to your particular operating system. You can access comprehensive step-by-step guide [here](https://docs.docker.com/engine/install/).
 
 
 ## Step 1: Create Model Repository
@@ -107,7 +107,12 @@ Once the Docker image has been successfully pulled and the container is up and r
 ```
 This indicates our model has been deployed on the server and is now ready to perform inference.
 
+ Since the server needs to be up and running when client queries it, **after initiating the server's Docker container, do not close that terminal as it could stop the container.**
+
 ## Step 3: Set Up Triton Client
+ 
+To set up the client container, please utilize a separate terminal, distinct from the one employed for setting up the Triton server.
+
 Run the pre-built docker container for Trition Client
 ```bash
 docker run -it --rm --net=host -v "${PWD}:/workspace/" nvcr.io/nvidia/tritonserver:23.06-py3-sdk bash
