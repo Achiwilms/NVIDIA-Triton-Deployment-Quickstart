@@ -153,4 +153,4 @@ To learn more about the request-making process, you can explore the client.py fi
 
 You've successfully deployed a model on the Triton Inference Server. Congratulations! 🎉 
 
-On the other hand, if you encounter any challenges at any step, please feel free to contact me for assistance at this [email address](mailto:b09901074@g.ntu.edu.tw).
+On the other hand, if you encounter any challenges at any step, please feel free to contact me for assistance at this [email address](mailto:line.ai.news.bot@gmail.com).
